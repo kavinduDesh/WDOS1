@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a hotel web application for clients and customers.">
+        <link rel="stylesheet" href="../Hotel_Web/styles/main_style.css">
+        <link rel="stylesheet" href="../Hotel_Web/styles/normalize.css">  
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <title>The Glamour</title>
+    </head>
+    <body>
+        <header class="hero">
+            <a href="index.html"><img src="images/logo1.png" class="logo" id="logoheh"></a>
+            <nav>
+                <div class="nav-list" id="navlinks">
+                    <img src="images/close.png" class="fa" id="navbutton" onclick="hidemenue()">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="branches.html" class="onsite">Branches</a></li>
+                        <li><a href="adventure.html">Adventure</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                    </ul>
+                </div>
+            </nav>        
+            <img src="images/menue.png" class="fa" id="navbutton" onclick="showmenue()">
+        </header>
+        <main>
+            <section class="onsiteMain">
+                <h1>Our Branches</h1>
+            </section>
+            <section class="details">
+                <div class="BranchCol">
+                    <img src="images/logoElla.png" class="branchLogo">
+                    <img src="images/ellaHotelView.jpg" class="branchPic">
+                    <h1>Ella Glamour</h1>
+                    <p>Have a rest in one of the trending destinations in Sri Lanka. The Glamour has a lot to offer you more than just having a rest. The amazing view just you see by waking up into heaven</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15844.842981850581!2d81.03702582085215!3d6.865330193673562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465955bc09a25%3A0xbdfadcdadec487fb!2sElla!5e0!3m2!1sen!2slk!4v1694284595132!5m2!1sen!2slk" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="BranchCol">
+                    <img src="images/logoAnuradhapura.png" class="branchLogo">
+                    <img src="images/hotelAnuradhapura.jpg" class="branchPic">
+                    <h1>Anuradhapura Glamour</h1>
+                    <p>In the Capital Ancient City of Anuradhapura. We are ready to accomodate you in the peak wilderness to explore more in the ancient city of Anuradhapura. Have a relax stay after and before exploring.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126325.51657005993!2d80.32073882972458!3d8.335313175011485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcf4f99360e159%3A0xc111fe9ebc6dcf0e!2sAnuradhapura!5e0!3m2!1sen!2slk!4v1694284550067!5m2!1sen!2slk" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="BranchCol">
+                    <img src="images/logoKandy.png" class="branchLogo">
+                    <img src="images/hotelKandy.jpg" class="branchPic">
+                    <h1>Kandy Glamour</h1>
+                    <p>Experience Kandy's natural beauty at our cozy hotel. Explore the city's cultural treasures while enjoying a comfortable stay with us.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63320.41806471974!2d80.58449546534233!3d7.294628565556714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!5e0!3m2!1sen!2slk!4v1694284401326!5m2!1sen!2slk" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <section class="tableSummary">
+                <table>
+                    <thead>
+                        <th>Ella Glamour</th>
+                        <th>Anuradhapura Glamour</th>
+                        <th>Kandy Glamour</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Located in Kandy</td>
+                            <td>Located in Anuradhapura</td>
+                            <td>Located in Ella</td>
+                        </tr>
+                        <tr>
+                            <td>Botique Hotel</td>
+                            <td>Resort and Spa</td>
+                            <td>Eco Hotel</td>
+                        </tr>
+                        <tr>
+                            <td>9 rooms in the hotel</td>
+                            <td>20 rooms in the resort</td>
+                            <td>33 rooms in the hotel</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <div id="f_logo_summ">
+                <a href=""><img src="images/logo_white.png" class="footer_logo" alt="The Glamours" title="The Glamours"></a>
+                <p>The Glamours was established on 2023 with the aim of providing the luxury our guests deserve to Withness</p>
+            </div>
+            <section>
+                <div class="footer_col">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                        <li><a href="adventure.html">Adventures</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h2>Branches</h2>
+                    <ul>
+                        <li><a href="branches.html">Kandy</a></li>
+                        <li><a href="branches.html">Ella</a></li>
+                        <li><a href="branches.html">Anuradhapura</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col" id="explore">
+                    <h2>Explore</h2>
+                    <ul><div class="special"></div>
+                        <li><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"><p> Instagram</p></a></li>
+                        <li><img src="images/facebook.png" alt="Facebook"><p> Facebook</p></li>
+                        <li><img src="images/youtube.png" alt="Youtube"><p> Youtube</p></li>
+                        <li><img src="images/trip_advisor.png" alt="Trip Advisor"><p> Trip Advisor</p></li>
+                    </div>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h2>Get in Touch</h2>
+                    <p><b>The Glamours Colombo</b></p>
+                    <p>No. 11, Galle Road, Colombo 02</p>
+                    <p>+94 11 234 5678</p>
+                    <p>info@thegalamour.lk</p>
+                                        
+                </div>
+            </section>
+            <hr>
+            <p>A</p>
+            <!-- References
+
+            The View Ella, Ella, Sri Lanka (no date). Available at: https://www.booking.com/hotel/lk/the-view-ella.html?activeTab=photosGallery.
+
+            Photo by Michael Block: https://www.pexels.com/photo/woman-soaking-on-the-swimming-pool-3225531/
+
+            Repreza, G. (2018) white and brown concrete building, Unsplash. Available at: https://unsplash.com/photos/CepDpEiALqM.
+
+            
+
+             -->
+        </footer>
+        <script>
+            var navlinks = document.getElementById("navlinks")
+
+            function showmenue(){
+                navlinks.style.right = "0"
+            }
+            function hidemenue(){
+                navlinks.style.right = "-200px"
+            }
+            </script>
+    </body>
+</html>

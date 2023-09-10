@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a hotel web application for clients and customers.">
+        <link rel="stylesheet" href="../Hotel_Web/styles/weddings.css">
+        <link rel="stylesheet" href="../Hotel_Web/styles/normalize.css">  
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <title>The Glamour</title>
+    </head>
+<body>
+    <header class="hero">
+        <!-- Logo and navigation menu -->
+        <a href="index.html"><img src="images/logo1.png" class="logo" id="logoheh"></a>
+        <nav>
+            <div class="nav-list" id="navlinks">
+                <!-- Close button for the navigation menu in mobile responsive mode -->
+                <img src="images/close.png" class="fa" id="navbutton" onclick="hidemenue()">
+                <ul>
+                    <!-- Navigation links -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="adventure.html">Adventure</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                </ul>
+            </div>
+        </nav>        
+        <!-- Button to open the navigation menu in mobile responsive mode -->
+        <img src="images/menue.png" class="fa" id="navbutton" onclick="showmenue()">
+
+    </header>
+    <section class="events">
+        <a href="weddings.html">Weddings</a>
+        <a href="birthdayParty.html">Birthday Party</a>
+    </section>
+    <main>
+        <section class="onsiteMain">
+            <h1>Looking for a location to Plan your wedding?</h1>
+        </section>
+        <section class="aboutWed">
+            <img src="images/outDoorWed.jpg">
+            <div class="waboutTxt">
+                <h1>We got you covered!</h1>
+                <p>Get married at The Glamour! Our halls are perfect for weddings, big or small. Our team will help with everything, from decorations to the menu. Create lasting memories with us. Reserve your dream wedding today!</p>
+            </div>
+        </section>
+        <section class="offering">
+            <h2>What comes in the pakage</h1>
+            <div class="offeringDetails">
+                <div class="offeringCols">
+                    <h3>DJ</h3>
+                    <img src="images/dj.jpg">
+                </div>
+                <div class="offeringCols">
+                    <h3>Flowers</h3>
+                    <img src="images/flowers.jpg">
+                </div>
+                <div class="offeringCols">
+                    <h3>Accomodation</h3>
+                    <img src="images/seaView.jpg">
+                </div>
+            </div>
+        </section>
+        <section class="venues">
+            <h2>Our Avenues</h2>
+            <ol>
+                <li>Outdoor Beach-Side</li>
+                <li>Roof-top with City View</li>
+                <li>Banquet Hall</li>
+            </ol>
+        </section>
+        <section class="contact">
+            <h1>Contact us for more information</h1>
+            <h2>info@theglamour.lk</h2>
+        </section>
+    </main>
+    <footer>
+        <div id="f_logo_summ">
+            <!-- Footer logo and summary -->
+            <a href=""><img src="images/logo_white.png" class="footer_logo" alt="The Glamours" title="The Glamours"></a>
+            <p>The Glamours was established in 2023 with the aim of providing the luxury our guests deserve to witness.</p>
+        </div>
+        <section>
+            <!-- Footer sections with quick links, branches, social media, and contact information -->
+            <div class="footer_col">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="adventure.html">Adventures</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h2>Branches</h2>
+                <ul>
+                    <li><a href="branches.html">Kandy</a></li>
+                    <li><a href="branches.html">Ella</a></li>
+                    <li><a href="branches.html">Anuradhapura</a></li>
+                </ul>
+            </div>
+            <div class="footer_col" id="explore">
+                <h2>Explore</h2>
+                <ul>
+                    <!-- Social media links -->
+                    <li><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></li></a>
+                    <li><a href="https://www.youtube.com/"><img src="images/youtube.png" alt="Youtube"></li></a>
+                    <li><a href="https://www.tripadvisor.com/#"><img src="images/trip_advisor.png" alt="Trip Advisor"></li></a>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h2>Get in Touch</h2>
+                <!-- Contact information -->
+                <p><b>The Glamours Colombo</b></p>
+                <p>No. 11, Galle Road, Colombo 02</p>
+                <p>+94 11 234 5678</p>
+                <p>info@thegalamour.lk</p>
+            </div>
+        </section>
+        <hr>
+        <p>A</p>
+    <!-- References
+    
+    Photo by Agung Pandit Wiguna: https://www.pexels.com/photo/reception-outdoors-2788488/
+    
+    Photo by Asad Photo Maldives: https://www.pexels.com/photo/man-and-woman-walking-of-body-of-water-1024993/
+
+    Photo by Gaby Tenda: https://www.pexels.com/photo/person-using-dj-mixer-2717073/
+-->
+    </footer>
+    <script>
+        // JavaScript functions for showing and hiding the navigation menu in responsive mode only
+        var navlinks = document.getElementById("navlinks")
+
+        function showmenue(){
+            navlinks.style.right = "0"
+        }
+        function hidemenue(){
+            navlinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

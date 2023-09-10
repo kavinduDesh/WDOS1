@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a hotel web application for clients and customers.">
+        <link rel="stylesheet" href="../Hotel_Web/styles/main_style.css">
+        <link rel="stylesheet" href="../Hotel_Web/styles/normalize.css">  
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <title>The Glamour</title>
+    </head>
+<body>
+    <header class="hero">
+        <!-- Logo and navigation menu -->
+        <a href="index.html"><img src="images/logo1.png" class="logo" id="logoheh"></a>
+        <nav>
+            <div class="nav-list" id="navlinks">
+                <!-- Close button for the navigation menu in mobile responsive mode -->
+                <img src="images/close.png" class="fa" id="navbutton" onclick="hidemenue()">
+                <ul>
+                    <!-- Navigation links -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="adventure.html" class="onsite">Adventure</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                </ul>
+            </div>
+        </nav>        
+        <!-- Button to open the navigation menu in mobile responsive mode -->
+        <img src="images/menue.png" class="fa" id="navbutton" onclick="showmenue()">
+    </header>
+    <main>
+        <section class="onsiteMain">
+            <h1>Explore Adventures</h1>
+        </section>
+        <section class="adventures">
+            <div class="advenContent">
+                <img src="images/colomboCityTour.jpg" title="" alt="Colombo">
+                <div class="adventure_content">
+                    <h1>Colombo City Tour</h1>
+                    <p>Enjoy the day in the heart of Colombo visit, Gangaramaya Temple, Independence Memorial Hall, Beira Lake, Pettah Market and much more!</p>            
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.58639503233!2d79.77363066656471!3d6.922001953076346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1694324721800!5m2!1sen!2slk" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <A href="bookings.html">Book Now</A>
+        </section>
+        <section class="adventures">
+            <div class="advenContent">
+                <img src="images/divingLesson.jpg" title="" alt="Colombo">
+                <div class="adventure_content">
+                    <h1>Diving Lessons</h1>
+                    <p>Learn to dive with expert instructors and explore the stunning underwater world during your stay with us.</p>            
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6108.251931592042!2d79.83821328926985!3d6.925065684886591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593bcace8c17%3A0xe6b567a8d83fb7ce!2sGalle%20Face%20Beach!5e0!3m2!1sen!2slk!4v1694324786077!5m2!1sen!2slk" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <A href="bookings.html">Book Now</A>
+        </section>
+        <section class="adventures">
+            <div class="advenContent">
+                <img src="images/waterSport.jpg" title="" alt="Colombo">
+                <div class="adventure_content">
+                    <h1>Water Sport</h1>
+                    <p>Experience exciting water sports just steps away from our hotel. Whether you're new to it or an expert, we have fun activities like jet-skiing and paddleboarding waiting for you.</p>            
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6108.251931592042!2d79.83821328926985!3d6.925065684886591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593bcace8c17%3A0xe6b567a8d83fb7ce!2sGalle%20Face%20Beach!5e0!3m2!1sen!2slk!4v1694324786077!5m2!1sen!2slk" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <A href="bookings.html">Book Now</A>
+        </section>
+    </main>
+    <footer>
+        <div id="f_logo_summ">
+            <!-- Footer logo and summary -->
+            <a href=""><img src="images/logo_white.png" class="footer_logo" alt="The Glamours" title="The Glamours"></a>
+            <p>The Glamours was established in 2023 with the aim of providing the luxury our guests deserve to witness.</p>
+        </div>
+        <section>
+            <!-- Footer sections with quick links, branches, social media, and contact information -->
+            <div class="footer_col">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="adventure.html">Adventures</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h2>Branches</h2>
+                <ul>
+                    <li><a href="branches.html">Kandy</a></li>
+                    <li><a href="branches.html">Ella</a></li>
+                    <li><a href="branches.html">Anuradhapura</a></li>
+                </ul>
+            </div>
+            <div class="footer_col" id="explore">
+                <h2>Explore</h2>
+                <ul>
+                    <!-- Social media links -->
+                    <li><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"><p> Instagram</p></a></li>
+                    <li><img src="images/facebook.png" alt="Facebook"><p> Facebook</p></li>
+                    <li><img src="images/youtube.png" alt="Youtube"><p> Youtube</p></li>
+                    <li><img src="images/trip_advisor.png" alt="Trip Advisor"><p> Trip Advisor</p></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h2>Get in Touch</h2>
+                <!-- Contact information -->
+                <p><b>The Glamours Colombo</b></p>
+                <p>No. 11, Galle Road, Colombo 02</p>
+                <p>+94 11 234 5678</p>
+                <p>info@thegalamour.lk</p>
+            </div>
+        </section>
+        
+        <hr>
+        <p>A</p>
+    <!-- References
+    
+    https://unsplash.com/photos/Dw2QYtzSNn0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+    Photo by Andrea Piacquadio: https://www.pexels.com/photo/photo-of-a-swimmer-on-swimming-pool-3775140/   
+    
+    Photo by Asad Photo Maldives: https://www.pexels.com/photo/two-people-riding-on-jet-ski-1430671/
+        -->
+    </footer>
+    <script>
+        // JavaScript functions for showing and hiding the navigation menu in responsive mode only
+        var navlinks = document.getElementById("navlinks")
+
+        function showmenue(){
+            navlinks.style.right = "0"
+        }
+        function hidemenue(){
+            navlinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

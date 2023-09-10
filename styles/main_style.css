@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    line-height: 1.5;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --lightTextColor: whitesmoke;
+    --darkTextColor: rgb(56, 56, 56);
+    --signatureColor: rgb(0, 138, 143);
+    --fontSizeMobile: 15px; 
+    --normalHeader: 62px;
+    --MobileHeader: 31px;
+    --defaultBorderRadius: 10px;
+    --signaturebackground: rgba(0, 255, 255, 0.301);
+    --deafaultBoxShadow:  2px 2px 7px rgb(83, 83, 83);
+}
+/* header styling */
+.logo{
+    height: 35px;
+}
+.hero{
+    height: 125px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+}
+/* ------navigation styling------ */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+nav ul li a{
+    color: var(--darkTextColor);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+.onsite{
+    all: unset;
+    color: var(--signatureColor);
+    font-weight: bold;
+    font-size: 23px;
+    transition: all .3s ease-out;
+    cursor: pointer;
+
+}
+nav ul li a:hover{
+    color: var(--signatureColor);
+}
+nav ul li:hover{
+    transform: translateY(-3px);
+}
+.fa{
+    display: none;
+}
+#navbutton{
+    display: none;
+}
+/* reponsive navigation */
+@media(max-width: 1017px){
+    nav ul li{
+        display: block;
+    }
+    .onsiteMain h1{
+        font-size: 15px;
+    }
+    #navlinks{
+        position: fixed;
+        background-color: rgba(11, 47, 58, 0.911);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        padding-top: 25vh;
+        right: -220px;
+        text-align: left;
+        z-index: 1;
+        transition: 0.5s;
+        color: whitesmoke;
+    }
+    nav ul li a{
+        color: whitesmoke;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        cursor: pointer;
+    }
+    #navbutton{
+        display: block;
+    }
+    nav ul{
+        padding: 30px;
+    }
+}
+/* footer stlying */
+footer{
+    background-color: #002231;
+    padding: 70px 0;
+}
+#f_logo_summ{
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #bbbbbb;
+}
+.footer_logo{
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+footer section{
+    max-width: 1170px;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer section ul{
+    list-style: none;
+}
+.footer_col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer_col h2{
+    font-size: 18px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer_col ul li{
+    display: grid;
+    grid-template-columns: 40px 0;
+    padding: 10px 0;
+}
+.footer_col p{
+    line-height: 30px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: whitesmoke;
+    font-weight: 300;
+}
+#explore ul li a{
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-left: 7px;
+}
+#explore ul li a:hover{
+    box-shadow: 0px 0px var(--signatureColor) ;
+    background-color: var(--signatureColor);
+}
+
+.footer_col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer_col ul li a:hover{
+    color: var(--signatureColor);
+    padding-left: 2px;
+    font-weight: 500;
+}
+/* Responsive footer*/
+@media(max-width: 1000px){
+    .footer_col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 580px){
+    .footer_col{
+        width: 100%;
+    }
+}
+/* ----common hero image------ */
+.onsiteMain{
+    min-height: 85vh;
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url(../images/sea_view_welcome.jpg);
+    background-position: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.onsiteMain h1{
+    color: white;
+    font-size: 62px;
+}
+@media(max-width: 500px){
+    .onsiteMain h1{
+        font-size: 37px;
+    }
+}
+/* --------------------home page--------------------------- */
+/* ------------Introduction Section-------------------- */
+.intro{
+    width: 100%;
+    padding: 30vh 30px;
+    height: 110vh;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+.intro_text{
+    justify-content: space-between;
+}
+.intro img {
+    width: 50%; 
+    margin-right: 20px; 
+}
+.intro h2{
+    font-size: var(--normalHeader);
+    color: var(--darkTextColor);
+}
+.intro p{
+    line-height: 2;
+    padding: 25px 0;
+}
+/* ----------------------Responsive Introduction------------------------- */
+@media screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 50px 10px;
+        height: 120vh;
+        align-items: center;
+    }
+    .intro_text{
+        text-align: center;
+    }
+    .intro img {
+        width: 75%; 
+        margin-right: 0; 
+    }
+    .intro p{
+        padding: 0px 0px;
+        font-size: var(--fontSizeMobile);
+    }
+    .intro h2{
+        font-size: var(--MobileHeader);
+    }
+}
+/* ---------------Facilities section------------------------ */
+.amentites{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 75vh;
+    width: 100%;
+    color: whitesmoke;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url(../images/sea_view_welcome.jpg);
+    padding: 50px;
+    align-items: center;
+}
+.amentites li{
+    list-style: square url(../images/tick.png) inside;
+    padding: 10px 0;
+    text-align: left;
+}
+.amentites h1{
+    font-size: var(--normalHeader);
+    text-align: right;
+}
+/* -----------------------Responsive Facilities------------------ */
+@media(max-width: 750px){
+    .amentites{
+        flex-direction: column;
+        height: 50%;
+    }
+    .amentites h1{
+        font-size: var(--MobileHeader);
+        text-align: center;
+    }
+    .amentites ul{
+        align-items: center;
+        text-align: center;
+    }
+    .amentites li{
+        font-size: var(--fontSizeMobile);
+    }
+}
+/* -------------------------Rooms Section---------------------- */
+.roomTypes{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+.rooms_cols{
+    margin: 18px;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: var(--darkTextColor);
+}
+.rooms_cols h3{
+    font-size: 23px;
+}
+.rooms_cols img{
+    width: 100%;
+}
+.rooms_cols a{
+    color: var(--darkTextColor);
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(0, 255, 255, 0.301);
+    border-radius: var(--defaultBorderRadius);
+    transition: all 0.3s ease;
+}
+.rooms_cols a:hover{
+    box-shadow: var(--deafaultBoxShadow);
+
+}
+/* ----------responsive room section----------- */
+@media(max-width: 810px){
+    .roomTypes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        height: 220vh;
+
+    }
+    .rooms_cols img{
+        width: 40%;
+        padding: 5px 0;
+        margin: 2px;
+    }
+    .rooms_cols h3{
+        font-size: var(--MobileHeader);
+    }
+    .rooms_cols p{
+        font-size: var(--fontSizeMobile);
+    }
+}
+/* -----------------------Ayurwedice Section--------------------------- */
+.ayur{ 
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: space-around;
+    align-items: center;
+    height: 110vh;
+    width: 100%;
+    color: whitesmoke;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url(../images/ayur\ web.png);
+    padding: 50px;
+    text-align: right;
+}
+.Ayurtxt{
+    background-color: rgba(0, 255, 255, 0.192);
+    border-radius: var(--defaultBorderRadius);
+    margin-right: 14px;
+    padding-right: 4px;
+}
+.ayur h1{
+    font-size: var(--normalHeader);
+}
+.ayur p{
+    line-height: 2;
+}
+.ayur img{  
+    width: 100%;
+    border-radius: 5px;
+}
+.Ayurtxt h5, li{
+    text-align: left;
+    align-items: left;
+}
+.Ayurtxt h5{
+    font-size: 40px;
+}
+.ayuSubSection{
+    padding-top: 50px;
+}
+/* -------------------Responsive Ayurwedic Section----------------------- */
+@media(max-width: 810px){
+    .ayur{
+        grid-template-columns: 1fr;
+        height: 50%;
+    }
+    .ayur h1{
+        font-size: var(--MobileHeader);
+        text-align: center;
+    }
+    .ayur p{
+        font-size: var(--fontSizeMobile);
+        align-items: center;
+        text-align: center;
+    }
+    .ayur img{
+        display: none;
+    }
+    .Ayurtxt h5{
+        text-align: center;
+        font-size: var(--MobileHeader);
+    }
+}
+/* ---------------------branches------------------------ */
+/* --------details of the branch-------- */
+.details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.BranchCol{
+    margin: 3%;
+    padding: 3% 3%;
+    background-color: var(--signaturebackground);
+    border-radius: var(--defaultBorderRadius);
+    color: var(--darkTextColor);
+}
+.BranchCol h1{
+    height: 80px;
+    text-align: center;
+}
+.BranchCol p{
+    height: 200px;
+}
+.BranchCol iframe{
+    width: 100%;
+    height: auto;
+}
+.branchLogo{
+    width: 100%;
+    height: 10%;
+}
+.branchPic{
+    width: 100%;
+}
+/* -----------mobile responsive branch details---------- */
+@media(max-width: 900px){
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .BranchCol h1{
+        padding: 0 0;
+        height: auto;
+    }
+    .BranchCol p{
+        height: auto;
+    }
+}
+/* -----------summary of tables--------------- */
+table{
+    background: linear-gradient(45deg, rgba(32, 255, 255, 0.336), rgba(0, 105, 105, 0.377));
+    border-radius: var(--defaultBorderRadius);
+    border-spacing: 0;
+}
+.tableSummary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15vh 0;
+}
+table thead{
+    background: linear-gradient(45deg,rgba(0, 105, 105, 0.377), rgba(32, 255, 255, 0.336));
+    margin: 0;
+}
+table th{
+    font-size: 25px;
+    padding: 7px 17px;
+    color: var(--darkTextColor);
+    margin: 0;
+}
+table td{
+    padding: 10px;
+}
+table td:first-child{
+    font-size: 18px;    
+}
+table tr:nth-of-type(even){
+    background: linear-gradient(45deg,rgba(0, 105, 105, 0.2), rgba(32, 255, 255, 0.2));
+}
+/* ------------mobile responsive table--------- */
+@media (max-width: 768px) {
+    table th, td{
+        font-size: var(--fontSizeMobile);
+    }
+    table td:first-child{
+        font-size: var(--fontSizeMobile);
+    }
+
+    }
+/* -----------------Adventures------------------ */
+.advenContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.adventures{
+    margin: 3%;
+    background-color: var(--signaturebackground);
+    border-radius: var(--defaultBorderRadius);
+}
+.adventures img{
+    width: 400px;
+}
+.adventures h1{
+    font-size: var(--normalHeader);
+}
+.adventures h1, .adventures p{
+    text-align: right;
+    color: var(--darkTextColor);
+    padding-right: 10px;
+}
+.adventures iframe{
+    display: block;
+    width: 100%;
+    padding: 15px 0px;
+    border: 0px;
+}
+.adventures a{
+    display: block;
+    text-align: center;
+    background-color: var(--signaturebackground);
+    text-decoration: none;
+    color: var(--darkTextColor);
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+.adventures a:hover{
+    box-shadow: var(--deafaultBoxShadow);
+}
+/* ---------mobile responsive adventure section-------- */
+@media(max-width: 900px){
+    .adventures img{
+        width: 50%;
+    }
+    .adventures h1{
+        font-size: var(--MobileHeader);
+    }
+    .adventures p{
+        font-size: var(--fontSizeMobile);
+    }
+}
+@media(max-width: 710px){
+    .adventures img{
+        width: 100%;
+    }
+    .adventures h1{
+        font-size: 25px;
+    }
+    .adventures p{
+        font-size: 10px;
+    }
+}
+/* -------------------Bookings---------------------- */
+.HotelBooking {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--signaturebackground);
+    border: 1px solid var(--signatureColor);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+fieldset {
+    border: 1px solid var(--signatureColor);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--darkTextColor);
+}
+input[type="text"],
+input[type="date"],
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--signatureColor);
+    border-radius: 3px;
+}
+input[type="submit"] {
+    background-color: var(--signaturebackground);
+    color: var(--darkTextColor);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+input[type="submit"]:hover{
+    box-shadow: var(--deafaultBoxShadow);
+}
+input[type="submit"][name="submit_reservation"] {
+    background-color: #240da765; 
+    justify-content: center;
+}
+.bookNow{
+    text-align: center;
+}
+.selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.selection label{
+    background-color: #01913d33;
+    padding: 10px;
+    border-radius: var(--defaultBorderRadius);
+}
+/* -------------mobile responsive booking page-------------- */
+@media screen and (max-width: 600px) {
+    .HotelBooking {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+/* ----------restaurant page---------- */
+.restaurantCols{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    padding: 20%;
+}
+.restaurantCols img{
+    width: 60%;
+}
+.restaurantCols h2, .restaurantCols h3, .restaurantCols p{
+    color: var(--darkTextColor);
+}
+.restaurantCols h2{
+    font-size: var(--normalHeader);
+    text-align: center;
+}
+.restaurantCols p{
+    text-align: center;
+}
+.restaurantCols a{
+    background-color: rgba(0, 87, 128, 0.562);
+    text-decoration: none;
+    border-radius: var(--defaultBorderRadius);
+    padding: 7px 10px;
+    transition: all 0.3s ease;
+    color: whitesmoke;
+}
+.restaurantCols a:hover{
+    box-shadow: var(--deafaultBoxShadow);
+    color: white;
+}
+/* -------mobile responsive restaurant page-------- */
+@media(max-width: 900px){
+    .restaurantCols{
+        padding: 1% 0;
+    }
+    .restaurantCols img{
+        width: 100%;
+    }
+    .restaurantCols h2{
+        font-size: var(--MobileHeader);
+    }
+    .restaurantCols h3{
+        font-size: 15px;
+    }
+    .restaurantCols p{
+        font-size: var(--fontSizeMobile);
+    }
+}
+.evenlinkContainer h3{
+    display: block;
+    text-align: center;
+    font-size: var(--normalHeader);
+    color: var(--darkTextColor);
+}
+.evenetLinks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 25vh;
+    background-image: linear-gradient(rgba(46, 0, 44, 0.7),rgba(4,9,30,0.7)),url(../images/weddingHero.jpg);
+}
+.evenetLinks a{
+    text-decoration: none;
+    color: var(--darkTextColor);
+    color: var(--lightTextColor);
+    font-size: 150%;
+    transition: all .3s ease;
+}
+.evenetLinks a:hover{
+    text-shadow: 0px 0px 12px red ;
+    font-size: 200%;
+}
+
+  

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a hotel web application for clients and customers.">
+        <link rel="stylesheet" href="../Hotel_Web/styles/main_style.css">
+        <link rel="stylesheet" href="../Hotel_Web/styles/normalize.css">  
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <title>The Glamour</title>
+    </head>
+<body>
+    <header class="hero">
+        <!-- Logo and navigation menu -->
+        <a href="index.html"><img src="images/logo1.png" class="logo" id="logoheh"></a>
+        <nav>
+            <div class="nav-list" id="navlinks">
+                <!-- Close button for the navigation menu in mobile responsive mode -->
+                <img src="images/close.png" class="fa" id="navbutton" onclick="hidemenue()">
+                <ul>
+                    <!-- Navigation links -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="adventure.html">Adventure</a></li>
+                    <li><a href="restaurants.html" class="onsite">Restaurants</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                </ul>
+            </div>
+        </nav>        
+        <!-- Button to open the navigation menu in mobile responsive mode -->
+        <img src="images/menue.png" class="fa" id="navbutton" onclick="showmenue()">
+    </header>
+    <main class="restaurants">
+        <section class="onsiteMain">
+            <h1>Restaurants</h1>
+        </section>
+        <section class="restaurantTypes">
+            <div class="restaurantCols">
+                <h2>Hela Bojun Hala</h2>
+                <h3>Tradditional Food Court</h3>
+                <img src="images/helaBojunRestaurant.jpg">
+                <p>Withness the True Sri Lanka recipes and menues from all organic grown food-items. From the local mother who cook with a real taste</p>
+                <a href="images/helaBojunMenue.jpg">View Menue</a>
+            </div>
+            <div class="restaurantCols">
+                <h2>Italiyana</h2>
+                <h3>Italian Cusine</h3>
+                <img src="images/italianRestaurant.jpg  ">
+                <p>Indulge in Italian flavors with pasta, pizza, and seafood at our cozy restaurant. Enjoy classics like Margherita pizza and creamy Carbonara.</p>
+                <a href="images/italianMenue.jpg">View Menue</a>
+            </div>
+            <div class="restaurantCols">
+                <h2>Dragon Dyanasty</h2>
+                <h3>Chinese Cusine</h3>
+                <img src="images/chineseRestaurant.jpg">
+                <p>Chinese food has lots of flavors like sweet, sour, salty, and more. They use fresh ingredients and different ways of cooking to make their dishes taste great.   </p>
+                <a href="images/chineseMenue.jpg">View Menue</a>
+            </div>
+        </section>
+        <!-- Events Sections with links directing to the relevant pages -->
+        <section class="evenlinkContainer">
+            <h3>Events</h3>
+            <div class="evenetLinks">
+                <a href="weddings.html">Weddings</a>
+                <a href="birthdayParty.html">Birthday Party</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="f_logo_summ">
+            <!-- Footer logo and summary -->
+            <a href=""><img src="images/logo_white.png" class="footer_logo" alt="The Glamours" title="The Glamours"></a>
+            <p>The Glamours was established in 2023 with the aim of providing the luxury our guests deserve to witness.</p>
+        </div>
+        <section>
+            <!-- Footer sections with quick links, branches, social media, and contact information -->
+            <div class="footer_col">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="adventure.html">Adventures</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h2>Branches</h2>
+                <ul>
+                    <li><a href="branches.html">Kandy</a></li>
+                    <li><a href="branches.html">Ella</a></li>
+                    <li><a href="branches.html">Anuradhapura</a></li>
+                </ul>
+            </div>
+            <div class="footer_col" id="explore">
+                <h2>Explore</h2>
+                <ul>
+                    <!-- Social media links -->
+                    <li><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"><p> Instagram</p></a></li>
+                    <li><img src="images/facebook.png" alt="Facebook"><p> Facebook</p></li>
+                    <li><img src="images/youtube.png" alt="Youtube"><p> Youtube</p></li>
+                    <li><img src="images/trip_advisor.png" alt="Trip Advisor"><p> Trip Advisor</p></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h2>Get in Touch</h2>
+                <!-- Contact information -->
+                <p><b>The Glamours Colombo</b></p>
+                <p>No. 11, Galle Road, Colombo 02</p>
+                <p>+94 11 234 5678</p>
+                <p>info@thegalamour.lk</p>
+            </div>
+        </section>
+        <hr>
+        <p>A</p>
+        <!-- References
+        
+        Hela Bojun Menue (no date). Available at: https://www.facebook.com/217379891616433/posts/menu-for-this-weekend-/3649371895083865/ (Accessed: September 10, 2023).
+        
+        ETC-women agriculture extension – Department of Agriculture Sri lanka (no date). Available at: https://doa.gov.lk/etc-women-agriculture-extension/.
+
+        Image by <a href="https://www.freepik.com/free-vector/hand-drawn-italian-food-menu-template_12557227.htm#query=italian%20menu&position=6&from_view=keyword&track=ais">Freepik</a>
+
+        Photo by <a href="https://unsplash.com/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jay Wennington</a> on <a href="https://unsplash.com/photos/N_Y88TWmGwA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        
+        Image by <a href="https://www.freepik.com/free-vector/photographic-chinese-food-flyer_3804338.htm#query=chinese%20food%20menu&position=1&from_view=keyword&track=ais">Freepik</a>
+
+        Photo by cottonbro studio: https://www.pexels.com/photo/man-and-woman-eating-bowl-of-noodles-7594076/
+
+
+        -->
+    </footer>
+    <script>
+        // JavaScript functions for showing and hiding the navigation menu in responsive mode only
+        var navlinks = document.getElementById("navlinks")
+
+        function showmenue(){
+            navlinks.style.right = "0"
+        }
+        function hidemenue(){
+            navlinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
